@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pd_tests",
+  "info": {
+    "singularName": "pd-test",
+    "pluralName": "pd-tests",
+    "displayName": "pd tests"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
