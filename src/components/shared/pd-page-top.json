@@ -26,7 +26,13 @@
     "package_type": {
       "type": "string"
     },
+    "count_of_tests": {
+      "type": "string"
+    },
     "aka": {
+      "type": "json"
+    },
+    "highlights": {
       "type": "json"
     },
     "sample_type": {
@@ -35,14 +41,23 @@
     "organs_covered": {
       "type": "json"
     },
-    "count_of_tests": {
-      "type": "string"
-    },
-    "highlights": {
+    "includes_tests": {
       "type": "json"
     },
-    "preperation_text": {
+    "symptoms": {
+      "type": "json"
+    },
+    "about": {
+      "type": "text"
+    },
+    "why": {
+      "type": "text"
+    },
+    "preperation_header": {
       "type": "string"
+    },
+    "preperation_text": {
+      "type": "text"
     }
   },
   "config": {}

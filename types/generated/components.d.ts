@@ -18,19 +18,24 @@ export interface SharedPdPageTop extends Struct.ComponentSchema {
     displayName: 'PD page top';
   };
   attributes: {
+    about: Schema.Attribute.Text;
     age: Schema.Attribute.String;
     aka: Schema.Attribute.JSON;
     count_of_tests: Schema.Attribute.String;
     Fasting_required: Schema.Attribute.Boolean;
     gender: Schema.Attribute.String;
     highlights: Schema.Attribute.JSON;
+    includes_tests: Schema.Attribute.JSON;
     Name: Schema.Attribute.String;
     organs_covered: Schema.Attribute.JSON;
     package_type: Schema.Attribute.String;
-    preperation_text: Schema.Attribute.String;
+    preperation_header: Schema.Attribute.String;
+    preperation_text: Schema.Attribute.Text;
     product_id: Schema.Attribute.String;
     reports_in: Schema.Attribute.String;
     sample_type: Schema.Attribute.JSON;
+    symptoms: Schema.Attribute.JSON;
+    why: Schema.Attribute.Text;
   };
 }
 
