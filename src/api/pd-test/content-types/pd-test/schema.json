@@ -11,8 +11,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
+    "pd_common": {
+      "type": "component",
+      "component": "shared.pd-page-top",
+      "repeatable": true
     }
   }
 }

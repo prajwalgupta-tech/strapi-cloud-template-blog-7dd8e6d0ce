@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_shared_pd_page_tops",
+  "info": {
+    "displayName": "PD page top"
+  },
+  "options": {},
+  "attributes": {
+    "product_id": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Fasting_required": {
+      "type": "boolean"
+    },
+    "reports_in": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "age": {
+      "type": "string"
+    },
+    "package_type": {
+      "type": "string"
+    },
+    "aka": {
+      "type": "json"
+    },
+    "sample_type": {
+      "type": "json"
+    },
+    "organs_covered": {
+      "type": "json"
+    },
+    "count_of_tests": {
+      "type": "string"
+    },
+    "highlights": {
+      "type": "json"
+    },
+    "preperation_text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

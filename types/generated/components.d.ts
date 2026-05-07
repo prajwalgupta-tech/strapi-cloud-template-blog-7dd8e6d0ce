@@ -12,6 +12,28 @@ export interface SharedMedia extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedPdPageTop extends Struct.ComponentSchema {
+  collectionName: 'components_shared_pd_page_tops';
+  info: {
+    displayName: 'PD page top';
+  };
+  attributes: {
+    age: Schema.Attribute.String;
+    aka: Schema.Attribute.JSON;
+    count_of_tests: Schema.Attribute.String;
+    Fasting_required: Schema.Attribute.Boolean;
+    gender: Schema.Attribute.String;
+    highlights: Schema.Attribute.JSON;
+    Name: Schema.Attribute.String;
+    organs_covered: Schema.Attribute.JSON;
+    package_type: Schema.Attribute.String;
+    preperation_text: Schema.Attribute.String;
+    product_id: Schema.Attribute.String;
+    reports_in: Schema.Attribute.String;
+    sample_type: Schema.Attribute.JSON;
+  };
+}
+
 export interface SharedQuote extends Struct.ComponentSchema {
   collectionName: 'components_shared_quotes';
   info: {
@@ -31,9 +53,7 @@ export interface SharedRichText extends Struct.ComponentSchema {
     displayName: 'Rich text';
     icon: 'align-justify';
   };
-  attributes: {
-    body: Schema.Attribute.RichText;
-  };
+  attributes: {};
 }
 
 export interface SharedSeo extends Struct.ComponentSchema {
@@ -67,6 +87,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'shared.media': SharedMedia;
+      'shared.pd-page-top': SharedPdPageTop;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;

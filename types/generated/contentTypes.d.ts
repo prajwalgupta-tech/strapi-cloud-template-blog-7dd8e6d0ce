@@ -615,7 +615,7 @@ export interface ApiPdTestPdTest extends Struct.CollectionTypeSchema {
       'api::pd-test.pd-test'
     > &
       Schema.Attribute.Private;
-    name: Schema.Attribute.String;
+    pd_common: Schema.Attribute.Component<'shared.pd-page-top', true>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
