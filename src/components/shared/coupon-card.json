@@ -27,6 +27,13 @@
     },
     "valid_till": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "terms_and_conditions": {
+      "type": "text",
+      "required": true
     }
   },
   "config": {}

@@ -8,7 +8,9 @@ export interface SharedCouponCard extends Struct.ComponentSchema {
   attributes: {
     active: Schema.Attribute.Boolean;
     code: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
     discount: Schema.Attribute.String;
+    terms_and_conditions: Schema.Attribute.Text & Schema.Attribute.Required;
     title: Schema.Attribute.String &
       Schema.Attribute.SetMinMaxLength<{
         maxLength: 22;
