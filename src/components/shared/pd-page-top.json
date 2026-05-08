@@ -12,22 +12,28 @@
       "type": "string"
     },
     "Fasting_required": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true
     },
     "reports_in": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "gender": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "age": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "package_type": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "count_of_tests": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "aka": {
       "type": "json"
@@ -36,13 +42,15 @@
       "type": "json"
     },
     "sample_type": {
-      "type": "json"
+      "type": "json",
+      "required": true
     },
     "organs_covered": {
       "type": "json"
     },
     "includes_tests": {
-      "type": "json"
+      "type": "json",
+      "required": true
     },
     "symptoms": {
       "type": "json"
@@ -54,10 +62,12 @@
       "type": "text"
     },
     "preperation_header": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "preperation_text": {
-      "type": "text"
+      "type": "text",
+      "required": true
     }
   },
   "config": {}
