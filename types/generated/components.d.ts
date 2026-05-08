@@ -20,21 +20,21 @@ export interface SharedPdPageTop extends Struct.ComponentSchema {
   attributes: {
     about: Schema.Attribute.Text;
     age: Schema.Attribute.String & Schema.Attribute.Required;
-    aka: Schema.Attribute.JSON;
+    aka: Schema.Attribute.String;
     count_of_tests: Schema.Attribute.String & Schema.Attribute.Required;
     Fasting_required: Schema.Attribute.Boolean & Schema.Attribute.Required;
     gender: Schema.Attribute.String & Schema.Attribute.Required;
-    highlights: Schema.Attribute.JSON;
+    highlights: Schema.Attribute.String;
     includes_tests: Schema.Attribute.JSON & Schema.Attribute.Required;
     Name: Schema.Attribute.String;
-    organs_covered: Schema.Attribute.JSON;
+    organs_covered: Schema.Attribute.String;
     package_type: Schema.Attribute.String & Schema.Attribute.Required;
     preperation_header: Schema.Attribute.String & Schema.Attribute.Required;
     preperation_text: Schema.Attribute.Text & Schema.Attribute.Required;
     product_id: Schema.Attribute.String;
     reports_in: Schema.Attribute.String & Schema.Attribute.Required;
-    sample_type: Schema.Attribute.JSON & Schema.Attribute.Required;
-    symptoms: Schema.Attribute.JSON;
+    sample_type: Schema.Attribute.String & Schema.Attribute.Required;
+    symptoms: Schema.Attribute.String;
     why: Schema.Attribute.Text;
   };
 }

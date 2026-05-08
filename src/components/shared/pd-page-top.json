@@ -35,25 +35,9 @@
       "type": "string",
       "required": true
     },
-    "aka": {
-      "type": "json"
-    },
-    "highlights": {
-      "type": "json"
-    },
-    "sample_type": {
-      "type": "json",
-      "required": true
-    },
-    "organs_covered": {
-      "type": "json"
-    },
     "includes_tests": {
       "type": "json",
       "required": true
-    },
-    "symptoms": {
-      "type": "json"
     },
     "about": {
       "type": "text"
@@ -68,6 +52,22 @@
     "preperation_text": {
       "type": "text",
       "required": true
+    },
+    "aka": {
+      "type": "string"
+    },
+    "highlights": {
+      "type": "string"
+    },
+    "sample_type": {
+      "type": "string",
+      "required": true
+    },
+    "organs_covered": {
+      "type": "string"
+    },
+    "symptoms": {
+      "type": "string"
     }
   },
   "config": {}
