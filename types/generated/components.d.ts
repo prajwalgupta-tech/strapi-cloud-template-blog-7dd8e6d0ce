@@ -1,5 +1,23 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface SharedCouponCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_coupon_cards';
+  info: {
+    displayName: 'Coupon card';
+  };
+  attributes: {
+    active: Schema.Attribute.Boolean;
+    code: Schema.Attribute.String;
+    discount: Schema.Attribute.String;
+    title: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 22;
+      }>;
+    type: Schema.Attribute.Enumeration<['percent', 'flat']>;
+    valid_till: Schema.Attribute.String;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -91,6 +109,7 @@ export interface SharedSlider extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'shared.coupon-card': SharedCouponCard;
       'shared.media': SharedMedia;
       'shared.pd-page-top': SharedPdPageTop;
       'shared.quote': SharedQuote;

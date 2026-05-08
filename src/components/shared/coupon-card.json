@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_coupon_cards",
+  "info": {
+    "displayName": "Coupon card"
+  },
+  "options": {},
+  "attributes": {
+    "active": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "percent",
+        "flat"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 22
+    },
+    "code": {
+      "type": "string"
+    },
+    "discount": {
+      "type": "string"
+    },
+    "valid_till": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
